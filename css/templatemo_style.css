@@ -437,6 +437,33 @@ ul.main-menu li a.active {
   height: 3in;
   float: left;
 }
+.title{
+  margin: 20px;
+}
+.experience-container{
+  width: 90%;
+  border: 5px solid #242526;/*#32353a*/
+  border-radius: 5px;
+  padding: 30px;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #242526;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.experience-card{
+  width: 95%;
+  border: 5px solid #161617;/*#32353a*/
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #242526;
+  -moz-animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
 .inner-story {
 
     background: #fff;
