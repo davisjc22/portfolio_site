@@ -14,51 +14,67 @@
 	<header class="site-header header-container animated fadeInDown">
 		<div class="header-wrapper">
 			<div class="row">
-				<div class="col-md-4">
-					<div class="site-branding">
-						<a href="#"><h1>Connor Davis</h1></a>
-					</div>
-				</div>
 				<a href="#" class="toggle-nav hidden-md hidden-lg">
 					<i class="fa fa-bars"></i>
 				</a>
-				<div class="col-md-8">
+				<div style="padding:0px 30px;">
 					<nav id="nav" class="main-navigation hidden-xs hidden-sm">
 						<ul class="main-menu">
-							<li><a class="show-1 active homebutton" href="#">Home</a></li>
-							<li><a class="show-2 aboutbutton" href="#">About Me</a></li>
-							<li><a class="show-3 experiencebutton" href="#">Experience</a></li>
-							<li><a class="show-4 projectbutton" href="#">Projects</a></li>
-							<li><a class="show-5 blogbutton" href="#">Blog Entries</a></li>
-							<li><a class="show-6 contactbutton" href="#">Contact</a></li>
+								<li><a class="show-1 active homebutton" href="#">Home</a></li>
+								<li><a class="show-2 aboutbutton" href="#">About</a></li>
+								<li><a class="show-3 experiencebutton" href="#">Experience</a></li>
+							<div class="site-branding">
+								<a href="#"><h1 style="padding: 0px 5px;">Connor Davis</h1></a>
+							</div>
+							<li>
+								<div class="dropdown">
+									<button class="dropbtn">PROJECTS</button>
+									<div class="dropdown-content">
+										<a class="show-4 schoolprojectsbutton" href="#">School</a>
+										<a class="show-5 personalprojectsbutton" href="#">Personal</a>
+									</div>
+								</div>
+							</li>
+							<li><a class="show-6 blogbutton" href="#">Blog</a></li>
+							<li><a class="show-7 contactbutton" href="#">Contact</a></li>
 						</ul>
 					</nav>
 					<nav class="main-navigation menu-responsive hidden-md hidden-lg">
 						<ul class="main-menu">
 							<li><a class="show-1 active homebutton" href="#">Home</a></li>
-							<li><a class="show-2 aboutbutton" href="#">About Me</a></li>
+							<li><a class="show-2 aboutbutton" href="#">About</a></li>
 							<li><a class="show-3 experiencebutton" href="#">Experience</a></li>
-							<li><a class="show-4 projectbutton" href="#">Projects</a></li>
-							<li><a class="show-5 blogbutton" href="#">Blog Entries</a></li>
-							<li><a class="show-6 contactbutton" href="#">Contact</a></li>
+							<li>
+								<div class="dropdown">
+									<button class="dropbtn">Projects</button>
+									<div class="dropdown-content">
+										<a class="show-4 schoolprojectsbutton" href="#">School</a>
+										<a class="show-5 personalprojectsbutton" href="#">Personal</a>
+								</div>
+							</li>
+							<li><a class="show-6 blogbutton" href="#">Blog</a></li>
+							<li><a class="show-7 contactbutton" href="#">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
 	</header>
 
 
 	<div id="menu-container">
 		<div id="menu-1" class="homepage home-section container">
 			<div class="home-intro">
-				<div class="home-intro-left">
+				<!-- <div class="home-intro-left">
 					<div class="welcome-image animated fadeInLeft"></div>
-				</div>
+				</div> -->
 				<div class="home-intro-body">
-					<p class="welcome-text animated fadeInRight">I am a Senior at the University of Kentucky and am looking for an opportunity to apply my skills in a career that I am truly passionate about. One of my dreams is to travel and experience all of the adventure and culture that the world can offer me.
-<span class="blue">template</span><span class="green">mo</span>. Credit goes to <a href="http://unsplash.com">Unsplash</a> for photos. Feel free to modify and use this layout for any personal or commercial website.</p>
-
+					<!-- <p class="welcome-text animated fadeInRight">I am a Senior at the University of Kentucky and am looking for an opportunity to apply my skills in a career that I am truly passionate about. One of my dreams is to travel and experience all of the adventure and culture that the world can offer me.
+<span class="blue">template</span><span class="green">mo</span>. Credit goes to <a href="http://unsplash.com">Unsplash</a> for photos. Feel free to modify and use this layout for any personal or commercial website.</p> -->
+					<h1>Hi, my name is Connor.</h1>
+					<h2>I'm a <span class="blue">computer science</span> student and a <span class="green">maker</span>.<h2>
 			</div>
 			</div>
 			<div class="home-projects">
@@ -120,15 +136,6 @@
 					<div class = "about-img"></div>
 				</div>
 			</div>
-			<div class="clearfix">
-				<div class="about-container animated fadeInLeft">
-					<div class = "about-img-2"></div>
-						<div class="about-text">
-							<h2>ABOUT ME TWO</h2>
-							<p>Cras placerat, est ac sollicitudin laoreet, ante enim egestas lorem, vel auctor nibh massa sit amet lacus. Cras mollis tellus id sollicitudin vulputate. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam gravida arcu</p>
-						</div>
-					</div>
-			</div>
 		</div>
 
 		<div id="menu-3" class="content experience-section container">
@@ -137,17 +144,44 @@
 					<div class="title"><h2>EXPERIENCE</h2></div>
 					<ul>
 						<div class="experience-card animated fadeInUp">
-							<p class= "experience-crad animated fadeInUp">Blah blah blah</p>
+							<img src="img/Lexmark.png" alt="Lexmark Logo" style="float:left;width:50px;height:auto;">
+							<h4 style="margin-left:90px;">Lexmark</h4>
+							<p style="margin-left:90px;">At Lexmark, I developed a proof of concept for a
+								 													cloud printing solution to prove that print management
+																					 is capable on lower end devices. While at Lexmark, I gained
+																					 experience participating in a Scrum environment, in addition
+																					 to learning about Internet of Things, Azure Cloud, and programming
+																					 in C#.
+																				 </p>
 						</div>
 						<div class="experience-card animated fadeInUp">
-							<p class= "experience-crad animated fadeInUp">Blah blah blah</p>
+							<img src="img/Badger.png" alt="Lexmark Logo" style="float:left;width:80px;height:auto;">
+							<h4 style="margin-left:90px;">Badger</h4>
+							<p style="margin-left:90px;">At Lexmark, I developed a proof of concept for a
+								 													cloud printing solution to prove that print management
+																					 is capable on lower end devices. While at Lexmark, I gained
+																					 experience participating in a Scrum environment, in addition
+																					 to learning about Internet of Things, Azure Cloud, and programming
+																					 in C#.
+																				 </p>
+						</div>
+						<div class="experience-card animated fadeInUp">
+							<img src="img/UK.png" alt="Lexmark Logo" style="float:left;width:80px;height:auto;">
+							<h4 style="margin-left:90px;">University of Kentucky Innovation Center</h4>
+							<p style="margin-left:90px;">At Lexmark, I developed a proof of concept for a
+								 													cloud printing solution to prove that print management
+																					 is capable on lower end devices. While at Lexmark, I gained
+																					 experience participating in a Scrum environment, in addition
+																					 to learning about Internet of Things, Azure Cloud, and programming
+																					 in C#.
+																				 </p>
 						</div>
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<div id="menu-4" class="content project-section container">
+		<div id="menu-4" class="content schoolprojects-section container">
 			<div class="projects-header">
 				<h2 class="animated fadeInRight">Our projects</h2>
 				<p class="animated fadeInLeft">Sed sagittis nunc vel tellus ultricies auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer eleifend tellus ut porttitor pharetra.</p>

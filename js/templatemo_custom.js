@@ -36,6 +36,18 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 
+	$(".main-menu a.schoolprojectsbutton").click(function(){
+		$("#menu-container .content").slideUp('slow');
+		$("#menu-container .schoolprojects-section").slideDown('slow');
+		return false;
+	});
+
+	$(".main-menu a.personalprojectsbutton").click(function(){
+		$("#menu-container .content").slideUp('slow');
+		$("#menu-container .personalprojects-section").slideDown('slow');
+		return false;
+	});
+
 	$(".main-menu a.blogbutton").click(function(){
 		$("#menu-container .content").slideUp('slow');
 		$("#menu-container .blog-section").slideDown('slow');

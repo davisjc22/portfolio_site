@@ -2,6 +2,14 @@
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+:root {
+  --first-color: #1E1F26;
+  --second-color: #283655;
+  --third-color: #4D648D;
+  --fourth-color: #D0E1F9;
+  --fifth-color: #A9B3CE;
+}
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -27,7 +35,7 @@
 }
 
 .green {
-	color: #0F0;
+	color: #3cb371;
 }
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
@@ -37,6 +45,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    position: relative;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
@@ -67,6 +76,7 @@ table {
 
 html {
     box-sizing: border-box;
+    color: var(--fifth-color);
 }
 
 *,*:before,*:after {
@@ -75,12 +85,12 @@ html {
 
 .site-header {
     margin-bottom: 30px;
-    background: #2c2f33;
+    /* background: #2c2f33; */
 }
 
 .header-wrapper {
-    /*border-bottom: 2px solid #46494f;*/
-    padding: 10px 0px 0px;
+    border-bottom: 2px solid var(--second-color);
+    padding: 10px 0px;
     position: relative;
 }
 
@@ -108,12 +118,12 @@ a.toggle-nav:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
+    text-align: center;
 }
 
 nav.main-navigation {
-    text-align: right;
+    text-align: center;
+    padding-left: 10px;
     margin-top: 10px;
 }
 
@@ -127,6 +137,8 @@ nav.main-navigation {
     margin-right: auto;
     padding-left: 3%;
     padding-right: 3%;
+    position: relative;
+    z-index: 2;
   }
   .container{
       width: 75%;
@@ -160,9 +172,15 @@ nav.main-navigation {
     }
 }
 
+ul.main-menu{
+  text-align: center;
+  display: inline-flex;
+}
 ul.main-menu li {
     display: inline-block;
-    margin-left: 10px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 14px;
 }
 
 ul.main-menu li a {
@@ -172,8 +190,10 @@ ul.main-menu li a {
 }
 
 ul.main-menu li a.active {
-    background: #4e91c9;
+    /* background: #4e91c9; */
     color: #fff;
+    border: 2px solid var(--second-color);/*#32353a*/
+    border-radius: 3px;
 }
 
 @media screen and (max-width: 992px) {
@@ -199,6 +219,47 @@ ul.main-menu li a.active {
         background: inherit;
         color: #4e91c9;
     }
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: var(--fifth-color);
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  position: relative;
+  z-index: 3;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  position: relative;
+  z-index: 3;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  z-index: 3;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 3;
 }
 
 .content {
@@ -392,14 +453,28 @@ ul.main-menu li a.active {
     -webkit-animation-delay: 1.7s;
     animation-delay: 1.7s;
 }
-.about-container{
+.home-container{
   width: 80%;
-  border: 5px solid #242526;/*#32353a*/
+  border: 5px solid var(--second-color);/*#32353a*/
   border-radius: 5px;
   padding: 50px;
   margin: 10px auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-color: #242526;
+  /* background-color: #242526; */
+  display: flex;
+  flex-wrap: nowrap;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.about-container{
+  width: 80%;
+  border: 5px solid var(--second-color);/*#32353a*/
+  border-radius: 5px;
+  padding: 50px;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /* background-color: #242526; */
   display: flex;
   flex-wrap: nowrap;
   -moz-animation-delay: 0.5s;
@@ -442,30 +517,30 @@ ul.main-menu li a.active {
 }
 .experience-container{
   width: 90%;
-  border: 5px solid #242526;/*#32353a*/
+  /* border: 5px solid #242526;/*#32353a*/ */
   border-radius: 5px;
   padding: 30px;
   margin: 10px auto;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-color: #242526;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  /* background-color: #242526; */
   -moz-animation-delay: 0.5s;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 .experience-card{
   width: 95%;
-  border: 5px solid #161617;/*#32353a*/
+  border: 5px solid var(--second-color);/*#32353a*/
   border-radius: 5px;
   padding: 20px;
   margin: 10px auto;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-color: #242526;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  /* background-color: #242526; */
   -moz-animation-delay: 0.75s;
   -webkit-animation-delay: 0.75s;
   animation-delay: 0.75s;
 }
-.inner-story {
 
+.inner-story {
     background: #fff;
     padding: 40px;
     color: #32353a;
@@ -956,10 +1031,10 @@ html {
 }
 
 body {
-    background: #32353a;
+    background: var(--first-color);
     font-size: 15px;
     font-weight: 300;
-    color: #b7bcbe;
+    color: var(--fourth-color);
     padding: 20px;
     font-family: "Roboto",sans-serif;
     line-height: 1.55;
@@ -970,10 +1045,6 @@ body {
 
 p {
     margin-bottom: 30px;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    text-transform: uppercase;
 }
 
 h1 {
@@ -1001,7 +1072,7 @@ h6 {
 }
 
 a {
-    color: #fff;
+    color: var(--fifth-color);
     text-decoration: none;
     -webkit-transition: all 100ms ease-in-out;
     -moz-transition: all 100ms ease-in-out;
