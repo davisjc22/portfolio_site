@@ -357,10 +357,10 @@ ul.main-menu li a.active {
 }
 
 .project-item {
-    margin-bottom: 30px;
-    position: relative;
+    margin-bottom: 10px;
     overflow: hidden;
-    border: 3px solid #1a1c1f;
+    border: 0px solid #1a1c1f;
+    border-radius: inherit;
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -368,14 +368,14 @@ ul.main-menu li a.active {
 
 .project-item img {
     width: 100%;
-    display: block;
+    /* display: block; */
 }
 
 .project-card {
   width: 80%;
-  height: 250px;
-  border: 5px solid var(--second-color);/*#32353a*/
-  border-radius: 6px;
+  height: auto;
+  border: 0px solid var(--second-color);/*#32353a*/
+  border-radius: 5px;
   /* padding: 20px; */
   margin: 10px auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -389,23 +389,19 @@ ul.main-menu li a.active {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .project-card-content{
-   padding: 15px 15px;
-   position: absolute;
-   bottom: 0;
+   padding: 15px;
 }
 .project-card-title{
-  height:50px;
+  /* padding: 20px; */
   width: 100%;
-  position:absolute;
-  top:0;
   padding-left: 15px;
   /* background-color: grey; */
 }
 .project-card-content button {
     background-color: transparent;
-    color: grey;
-    border: 2px solid grey; /* Green */
-    border-radius: 15%;
+    color: var(--fourth-color);
+    border: 2px solid var(--fourth-color); /* Green */
+    border-radius: 5px;
 
 }
 .overlay {
