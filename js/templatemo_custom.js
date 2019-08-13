@@ -55,13 +55,46 @@ jQuery(document).ready(function($) {
 	});
 
 	$(".main-menu a.contactbutton").click(function(){
+		console.log("clicked contact!");
 		$("#menu-container .content").fadeOut();
 		$("#menu-container .contact-section").slideDown('slow');
 		loadScript();
 		return false;
 	});
 
+	$("#project-1 div.project-card").click(function(){
+		var modal = document.getElementById('modal-1');
+		modal.style.display="block";
+		console.log("clicked project!");
+		$("#modal-1").slideDown('slow');
+		loadScript();
+		return false;
+	});
 
+	$("#modal-1 span.close").click(function(){
+		var modal = document.getElementById('modal-1');
+		console.log('clicked close!')
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
+
+	$("#project-2 div.project-card").click(function(){
+		var modal = document.getElementById('modal-2');
+		modal.style.display="block";
+		console.log("clicked project!");
+		$("#modal-2").slideDown();
+		loadScript();
+		return false;
+	});
+
+	$("#modal-2 span.close").click(function(){
+		var modal = document.getElementById('modal-2');
+		console.log('clicked close!')
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
 
 	$('a.toggle-nav').click(function(){
 		$('.menu-responsive').slideToggle();
