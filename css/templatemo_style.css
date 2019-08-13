@@ -357,7 +357,7 @@ ul.main-menu li a.active {
 }
 
 .project-item {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     overflow: hidden;
     border: 0px solid #1a1c1f;
     border-radius: inherit;
@@ -389,7 +389,7 @@ ul.main-menu li a.active {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .project-card-content{
-   padding: 15px;
+   padding: 0px 15px 15px 15px;
 }
 .project-card-title{
   /* padding: 20px; */
@@ -398,6 +398,7 @@ ul.main-menu li a.active {
   /* background-color: grey; */
 }
 .project-card-content button {
+    margin: 0px 1px;
     background-color: transparent;
     color: var(--fourth-color);
     border: 2px solid var(--fourth-color); /* Green */
