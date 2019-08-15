@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-
+	
 	$(".main-menu a").click(function(){
 		var id =  $(this).attr('class');
 		id = id.split('-');

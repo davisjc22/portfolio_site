@@ -1150,7 +1150,7 @@ a:hover {
 
 span[class*="border-"] {
     position: fixed;
-    background: #1f2122;
+    background: var(--first-color);
 }
 
 .border-top {
@@ -1181,43 +1181,12 @@ span[class*="border-"] {
     height: 100%;
 }
 
-.shape-1 {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: url("../img/shape-1.png") no-repeat;
-}
-
-.shape-2 {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    background: url("../img/shape-2.png") no-repeat;
-}
-
 .main-button,.main-footer .social li a {
-    color: #fff;
+    color: var(--fourth-color);
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     padding: 10px 15px;
     display: inline-block;
-    border: 2px solid #46494f;
-}
-
-.pink-button {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 12px;
-    padding: 10px 15px;
-    display: inline-block;
-    background: #a95bc3;
-    font-weight: normal;
-}
-
-.pink-button:hover {
-    color: #fff;
+    border: 2px solid var(--second-color);
+    border-radius: 3px;
 }
