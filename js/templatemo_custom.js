@@ -65,15 +65,12 @@ jQuery(document).ready(function($) {
 	$("#project-1 div.project-card").click(function(){
 		var modal = document.getElementById('modal-1');
 		modal.style.display="block";
-		console.log("clicked project!");
-		$("#modal-1").slideDown('slow');
 		loadScript();
 		return false;
 	});
 
 	$("#modal-1 span.close").click(function(){
 		var modal = document.getElementById('modal-1');
-		console.log('clicked close!')
 		modal.style.display="none";
 		loadScript();
 		return false;
@@ -82,15 +79,81 @@ jQuery(document).ready(function($) {
 	$("#project-2 div.project-card").click(function(){
 		var modal = document.getElementById('modal-2');
 		modal.style.display="block";
-		console.log("clicked project!");
-		$("#modal-2").slideDown();
 		loadScript();
 		return false;
 	});
 
 	$("#modal-2 span.close").click(function(){
 		var modal = document.getElementById('modal-2');
-		console.log('clicked close!')
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
+
+	$("#project-3 div.project-card").click(function(){
+		var modal = document.getElementById('modal-3');
+		modal.style.display="block";
+		loadScript();
+		return false;
+	});
+
+	$("#modal-3 span.close").click(function(){
+		var modal = document.getElementById('modal-3');
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
+	$("#project-4 div.project-card").click(function(){
+		var modal = document.getElementById('modal-4');
+		modal.style.display="block";
+		loadScript();
+		return false;
+	});
+
+	$("#modal-4 span.close").click(function(){
+		var modal = document.getElementById('modal-4');
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
+
+	$("#project-5 div.project-card").click(function(){
+		var modal = document.getElementById('modal-5');
+		modal.style.display="block";
+		loadScript();
+		return false;
+	});
+
+	$("#modal-5 span.close").click(function(){
+		var modal = document.getElementById('modal-5');
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
+
+	$("#project-6 div.project-card").click(function(){
+		var modal = document.getElementById('modal-6');
+		modal.style.display="block";
+		loadScript();
+		return false;
+	});
+
+	$("#modal-6 span.close").click(function(){
+		var modal = document.getElementById('modal-6');
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
+
+	$("#project-7 div.project-card").click(function(){
+		var modal = document.getElementById('modal-7');
+		modal.style.display="block";
+		loadScript();
+		return false;
+	});
+
+	$("#modal-7 span.close").click(function(){
+		var modal = document.getElementById('modal-7');
 		modal.style.display="none";
 		loadScript();
 		return false;
