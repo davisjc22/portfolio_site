@@ -543,6 +543,7 @@ a:link {
 .about-text{
   padding: 40px;
   color: #fff;
+  font-weight: 400;
 }
 
 .about-container img{
@@ -550,7 +551,7 @@ a:link {
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
   height: 100%;
-  width: auto;
+  width: 65%;
   float: right;
 }
 .about-text-2{
@@ -600,6 +601,33 @@ a:link {
   width: 30%;
 }
 
+.experience-card-header{
+  height: 10%;
+  margin-bottom: 40px;
+}
+
+.experience-card-header h4{
+  font-weight:400;
+  float: left;
+  margin-right: 10px;
+}
+
+.experience-card button{
+  float: left;
+  margin: 0px 5px;
+  background-color: transparent;
+  color: var(--fourth-color);
+  border: 2px solid var(--fourth-color); /* Green */
+  border-radius: 5px;
+}
+.experience-card ul{
+  margin-left: 18%;
+  margin-top: 10px;
+  width:80%;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--fifth-color);
+}
 .inner-story {
     background: #fff;
     padding: 40px;
@@ -740,12 +768,18 @@ span.offer-right {
 }
 
 .projects-header h2 {
-    font-weight: 100;
-    color: #fff;
+    color: var(--fifth-color);
     font-size: 36px;
     -moz-animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.1s;
+}
+
+.projects-header h4 {
+    color: var(--fifth-color);
+    -moz-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.2s;
 }
 
 .projects-header p {
