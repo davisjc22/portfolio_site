@@ -20,14 +20,15 @@
 				<div style="padding:0px 30px;">
 					<nav id="nav" class="main-navigation hidden-xs hidden-sm">
 						<ul class="main-menu">
-								<li><a class="show-1 active homebutton" href="#">Home</a></li>
-								<li><a class="show-2 aboutbutton" href="#">About</a></li>
-								<li><a class="show-3 experiencebutton" href="#">Experience</a></li>
 							<div class="site-branding">
 								<a href="#"><h1 style="margin: 0px 25px;">Connor Davis</h1></a>
 							</div>
+								<li><a class="show-1 active homebutton" href="#">Home</a></li>
+								<li><a class="show-2 aboutbutton" href="#">About</a></li>
+								<li><a class="show-3 experiencebutton" href="#">Experience</a></li>
+
 							<li><a class="show-4 schoolprojectsbutton" href="#">Projects</a></li>
-							<li><a class="show-6 blogbutton" href="#">Bonus</a></li>
+							<!-- <li><a class="show-6 blogbutton" href="#">Bonus</a></li> -->
 							<li><a class="show-7 contactbutton" href="#">Contact</a></li>
 						</ul>
 					</nav>
@@ -58,54 +59,74 @@
 				<div class="home-intro-body animated fadeInUp">
 					<!-- <p class="welcome-text animated fadeInRight">I am a Senior at the University of Kentucky and am looking for an opportunity to apply my skills in a career that I am truly passionate about. One of my dreams is to travel and experience all of the adventure and culture that the world can offer me.
 <span class="blue">template</span><span class="green">mo</span>. Credit goes to <a href="http://unsplash.com">Unsplash</a> for photos. Feel free to modify and use this layout for any personal or commercial website.</p> -->
-					<h4 style="color:var(--fourth-color); margin-left:5px;">Hi, my name is </h4>
+					<h4 style="color: white; margin-left:5px;">Hi, my name is </h4>
 					<h1 style="margin-top:-15px; color: #1177FF; font-weight: bold;">Connor Davis.</h1>
 					<h1 style="margin-top:-20px; color: #5f8b9a;">I'm a <a style="color: #5f8b9a; font-weight: bolder;" href="https://github.com/davisjc22">programmer</a> and a <span style="font-weight: bolder;">maker</span>.</h1>
 					<h3 style="margin-top:20px; color: #5f8b9a;">My passions are building things through programming,<br> 3d modeling, graphic design and whatever else I can get my hands on.</h3>
 			</div>
 			</div>
-			<div class="home-projects">
+			<div class="home-projects animated fadeInUp">
+				<div class="projects-header">
+					<h3>Current Projects</h3>
+				</div>
 				<div class="row">
-					<div class="col-md-6 col-sm-12">
-						<div class="project-title animated fadeInUp">
-							<h2>Latest Projects</h2>
-							<p>My passions are building things thorugh programming, 3d modeling, graphic design and whatever else I can get my hands on.</p>
-							<a href="#" class="pink-button">Continue Journal</a>
+					<div id="WIP-1" class="col-md-3 col-sm-6 p-1 animated umScaleIn">
+						<div class="project-card">
+
+							<div class="project-item">
+								<img src="img/4.jpg" alt="">
+							</div>
+							<div class="project-card-title">
+								<h3>VolHacks IV</h3>
+							</div>
+							<div class="project-card-content">
+								<button disabled>HTML</button>
+								<button disabled>JavaScript</button>
+							</div>
 						</div>
 					</div>
-					<div class="project-home-holder col-md-6 col-sm-12">
-						<div class="row">
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item one animated fadeInRight">
-									<img src="img/1.jpg" alt="">
-									<div class="overlay">
-										<h4><a href="#">Project One</a></h4>
-									</div>
-								</div>
+					<div id="WIP-2" class="col-md-3 col-sm-6 p-2 animated umScaleIn">
+						<div class="project-card">
+
+							<div class="project-item">
+								<img src="img/4.jpg" alt="">
 							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item two animated fadeInRight">
-									<img src="img/2.jpg" alt="">
-									<div class="overlay">
-										<h4><a href="#">Project Two</a></h4>
-									</div>
-								</div>
+							<div class="project-card-title">
+								<h3>Website</h3>
 							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item three animated fadeInRight">
-									<img src="img/3.jpg" alt="">
-									<div class="overlay">
-										<h4><a href="#">Project Three</a></h4>
-									</div>
-								</div>
+							<div class="project-card-content">
+								<button disabled>HTML</button>
+								<button disabled>JavaScript</button>
 							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="project-item four animated fadeInRight">
-									<img src="img/4.jpg" alt="">
-									<div class="overlay">
-										<h4><a href="#">Project Four</a></h4>
-									</div>
-								</div>
+						</div>
+					</div>
+					<div id="WIP-3" class="col-md-3 col-sm-6 p-3 animated umScaleIn">
+						<div class="project-card">
+
+							<div class="project-item">
+								<img src="img/4.jpg" alt="">
+							</div>
+							<div class="project-card-title">
+								<h3>2D Platformer</h3>
+							</div>
+							<div class="project-card-content">
+								<button disabled>HTML</button>
+								<button disabled>JavaScript</button>
+							</div>
+						</div>
+					</div>
+					<div id="WIP-4" class="col-md-3 col-sm-6 p-4 animated umScaleIn">
+						<div class="project-card">
+
+							<div class="project-item">
+								<img src="img/4.jpg" alt="">
+							</div>
+							<div class="project-card-title">
+								<h3>Lightsaber</h3>
+							</div>
+							<div class="project-card-content">
+								<button disabled>HTML</button>
+								<button disabled>JavaScript</button>
 							</div>
 						</div>
 					</div>
@@ -427,7 +448,6 @@ My team earned first place at CatHacks for our project and demo. We expanded on 
 					</div>
 					<div id="project-4" class="col-md-3 col-sm-6 p-4 animated umScaleIn">
 						<div class="project-card">
-project-project-modal-content
 							<div class="project-item">
 								<img src="img/4.jpg" alt="">
 							</div>
