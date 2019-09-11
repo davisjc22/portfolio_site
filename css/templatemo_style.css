@@ -1133,6 +1133,7 @@ span.solid-line {
 
 .main-footer .social li a:hover {
     border-top: 2px solid #1177FF;
+    padding-top: 8px;
     /* border-color: #4e91c9; */
 }
 
