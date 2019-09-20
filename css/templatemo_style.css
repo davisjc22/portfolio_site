@@ -135,8 +135,8 @@ nav.main-navigation {
     background: none;
     border: 2px solid white;
     border-radius: 3px;
-    text-transform: uppercase;
     padding: 6px 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .resume:hover{
