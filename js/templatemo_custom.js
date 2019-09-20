@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-	
+
 	$(".main-menu a").click(function(){
 		var id =  $(this).attr('class');
 		id = id.split('-');
@@ -154,6 +154,20 @@ jQuery(document).ready(function($) {
 
 	$("#modal-7 span.close").click(function(){
 		var modal = document.getElementById('modal-7');
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
+
+	$("#project-8 div.project-card").click(function(){
+		var modal = document.getElementById('modal-8');
+		modal.style.display="block";
+		loadScript();
+		return false;
+	});
+
+	$("#modal-8 span.close").click(function(){
+		var modal = document.getElementById('modal-8');
 		modal.style.display="none";
 		loadScript();
 		return false;
