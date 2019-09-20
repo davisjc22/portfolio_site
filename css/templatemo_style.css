@@ -128,6 +128,22 @@ nav.main-navigation {
     margin-top: 10px;
 }
 
+.resume{
+    float: right;
+    vertical-align: middle;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 6px 10px;
+}
+
+.resume:hover{
+  border: 2px solid #1177FF;
+  color: #1177FF;
+}
+
 @media screen and (min-width: 0px){
   /* nav.main-navigation{
     width: 1800px;
