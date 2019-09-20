@@ -144,6 +144,21 @@ nav.main-navigation {
   color: #1177FF;
 }
 
+.mail{
+  vertical-align: middle;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 6px 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mail:hover{
+  border: 2px solid #1177FF;
+  color: #1177FF;
+}
+
 @media screen and (min-width: 0px){
   /* nav.main-navigation{
     width: 1800px;
@@ -1036,6 +1051,9 @@ span.solid-line {
 
 .contact-header {
     margin-bottom: 100px;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 .contact-header h2 {
@@ -1057,9 +1075,9 @@ span.solid-line {
 }
 
 .contact-social {
-    -moz-animation-delay: 2s;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 .contact-social li {
