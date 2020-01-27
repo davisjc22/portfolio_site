@@ -62,6 +62,20 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 
+	$("#project-0 div.project-card").click(function(){
+		var modal = document.getElementById('modal-0');
+		modal.style.display="block";
+		loadScript();
+		return false;
+	});
+
+	$("#modal-0 span.close").click(function(){
+		var modal = document.getElementById('modal-0');
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
+
 	$("#project-1 div.project-card").click(function(){
 		var modal = document.getElementById('modal-1');
 		modal.style.display="block";
