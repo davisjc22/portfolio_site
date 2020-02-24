@@ -62,6 +62,48 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 
+	$("#WIP-0 div.project-card").click(function(){
+		var modal = document.getElementById('front-modal-0');
+		modal.style.display="block";
+		loadScript();
+		return false;
+	});
+
+	$("#front-modal-0 span.close").click(function(){
+		var modal = document.getElementById('front-modal-0');
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
+
+	$("#WIP-1 div.project-card").click(function(){
+		var modal = document.getElementById('front-modal-1');
+		modal.style.display="block";
+		loadScript();
+		return false;
+	});
+
+	$("#front-modal-1 span.close").click(function(){
+		var modal = document.getElementById('front-modal-1');
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
+
+	$("#WIP-2 div.project-card").click(function(){
+		var modal = document.getElementById('front-modal-2');
+		modal.style.display="block";
+		loadScript();
+		return false;
+	});
+
+	$("#front-modal-2 span.close").click(function(){
+		var modal = document.getElementById('front-modal-2');
+		modal.style.display="none";
+		loadScript();
+		return false;
+	})
+
 	$("#project-0 div.project-card").click(function(){
 		var modal = document.getElementById('modal-0');
 		modal.style.display="block";
